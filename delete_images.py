@@ -3,6 +3,8 @@
 @date 26.03.2016
 Program to Delete all image files in given Directory and all of its sub directories.
 To input correct directory path : go to that directory, right click on any file and see the path. Give that path in input.
+Can be used to remove images from a directory where images are not required among all other files.
+
 '''
 import os
 from os.path import exists
