@@ -16,8 +16,8 @@ for curr_dir, sub_dirs, files in os.walk(root_dir):
 	#print "Current Directory is : ", curr_dir
 	for file_item in files:
 		file_name = os.path.join(curr_dir, file_item)
-		folder_name = os.path.splitext(file_name)[0]
-		if os.path.splitext(file_name)[1] == '.zip':
+		folder_name, extension = os.path.splitext(file_name)
+		if extension == '.zip':
 			if not os.path.exists(folder_name):
 				print 'Extracting ',file_name
 				os.mkdir(folder_name, 0755)	#create a folder with same name as zip file name except zip extension
