@@ -26,3 +26,5 @@ for curr_dir, sub_dirs, files in os.walk(root_dir):
 				zip_ref.close()
 			else:
 				print 'Already extracted ',file_name
+			print "removing ",file_name
+			os.remove(file_name)
